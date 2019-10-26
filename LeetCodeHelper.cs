@@ -5,6 +5,22 @@ using System.Text;
 
 namespace LeetCodeHelper
 {
+	public class Pair<T1, T2>
+    {
+        public T1 first;
+        public T2 second;
+
+        public Pair(T1 f, T2 s)
+        {
+            this.first = f;
+            this.second = s;
+        }
+        public override string ToString()
+        {
+        	return string.Format("[{0}, {1}]", first.ToString(), second.ToString());
+        }
+    }
+
     public class ListNode
     {
         public int val;
